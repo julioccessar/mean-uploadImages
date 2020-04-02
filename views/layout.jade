@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css")
+        link(rel="stylesheet", href="/public/css/app.css")
+        script( src="/socket.io/socket.io.js")
+        script( src="/public/js/handlebars.js")
+        title Foto App
+    body
+        nav(class="large-padding black white-text menu-text-size")
+            ul
+                li 
+                    a(href="/app") Inicio
+                li 
+                    a(href="/app/imagenes/new") Subir Imagen    
+                li 
+                    a(href="/app/imagenes") Mis imágenes
+        block contenido
